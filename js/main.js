@@ -3,7 +3,7 @@ const { body } = document;
 const canvas = document.createElement('canvas');
 const context = canvas.getContext('2d');
 const width = 500;
-const height = 700;
+const height = 550;
 const screenWidth = window.screen.width;
 const canvasPosition = screenWidth / 2 - width / 2;
 const isMobile = window.matchMedia('(max-width: 600px)');
@@ -65,8 +65,8 @@ function renderCanvas() {
   // Dashed Center Line
   context.beginPath();
   context.setLineDash([4]);
-  context.moveTo(0, 350);
-  context.lineTo(500, 350);
+  context.moveTo(0, 275);
+  context.lineTo(500, 275);
   context.strokeStyle = 'grey';
   context.stroke();
 
